@@ -61,6 +61,8 @@ func (k *Kmp) Index(s string) int {
 	}
 }
 
+// Index function will not return kmp struct
+// The inside did it for you
 func Index(s, pattern string) int {
 	kmp := New(pattern)
 	return kmp.Index(s)
